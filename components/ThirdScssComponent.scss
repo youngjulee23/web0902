@@ -1,0 +1,18 @@
+//전역변수  
+$primary-color: black;
+
+.container{
+    //지역변수
+    $primary-color:red !default; 
+    background-color: $primary-color;
+}
+
+.hello{
+    color: $primary-color;
+}
+//!global 
+//변수의 유효범위를 전역으로 설정
+
+//!default
+//지역변수를 설정하겠지만, 지역변수와 이름이 같은 변수가 이미 있다면 현재 설정하는 지역변수를 무시하겠음
+//css를 잘 못해서 외부라이브러리를 갖다쓸때
